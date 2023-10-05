@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morgan Stanley - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="profile-picture.jpg" alt="Your Profile Picture" class="profile-img">
+            <h1 class="animated-heading">Morgan Stanley</h1>
+            <p class="animated-subtitle">Web Developer & Designer</p>
+        </div>
+        
+        <section class="about">
+            <h2 style="margin-bottom: 20px;">About Me</h2>
+            <p>
+                Hello there! I'm Morgan, a creative and dedicated web developer and designer based in California. With a deep passion for crafting delightful digital experiences, I thrive on turning ideas into beautiful and functional websites.
+                My journey in the world of web development began back in highschool when I would mess around with web designs. Over the years, I've had the privilege of working on a wide range of projects, from small business websites to large-scale web applications.
+                I'm a firm believer in the power of clean and elegant design. I pay meticulous attention to every detail, ensuring that not only does a website look visually stunning, but it also provides a seamless user experience. I'm well-versed in HTML, CSS, JavaScript, and various web development frameworks and tools.
+                When I'm not coding, you'll often find me exploring the latest design trends, experimenting with new technologies, or collaborating with like-minded individuals on exciting projects. I'm a lifelong learner and constantly seek opportunities to expand my skills and knowledge in the ever-evolving field of web development.
+                If you're looking to bring your digital vision to life, whether it's a personal blog, an e-commerce platform, or a dynamic web application, I'd love to help. Feel free to reach out to me, and let's work together to create something amazing!
+            </p>
+        </section>
+    </header>
+    
+    <section class="portfolio">
+        <h2>Portfolio</h2>
+        <div class="project">
+            <img src="game-project.jpg" alt="Project 1">
+            <h3>ESPORTS GAMING</h3>
+            <p>This website was created for gamers who are looking for additional help in leveling up their skills. You can find coaches from pretty much any popular games out there. If you are a master at a certain game, you can also sign up to be a coach!</p>
+        </div>
+        <div class="project">
+            <img src="tech-project.jpg" alt="Project 2">
+            <h3>TECH NEWS</h3>
+            <p>This website was created for tech enthusiasts or anyone who wanted daily news on the world of technology. You can find the latest news on data science, apple, hardware, and so much more -- all in one place. There is a mobile app version that I also developed if you want a more portable news station.</p>
+        </div>
+        <!-- Add more projects as needed -->
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:your.email@example.com">morgan23stanley@gmail.com</a>.</p>
+    </section>
+</body>
+</html>
+
+
+<style>
+/* Reset some default styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header styles */
+header {
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.header-content {
+    margin: 20px;
+}
+
+.profile-img {
+    width: 150px;
+    border-radius: 50%;
+    animation: scale 2s infinite alternate;
+}
+
+.animated-heading {
+    animation: bounce 1.5s infinite;
+}
+
+.animated-subtitle {
+    animation: fadeIn 1.5s forwards;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* About section styles */
+.about {
+    text-align: center;
+    color: black;
+    padding: 20px;
+    overflow: hidden;
+    max-height: 500px;
+    max-width: 90%;
+    transition: max-height 0.5s ease-in-out;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+.about-text {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+
+/* Portfolio section styles */
+.portfolio {
+    background-color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.project {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s forwards;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Contact section styles */
+.contact {
+    text-align: center;
+    padding: 40px 0;
+}
+</style>
